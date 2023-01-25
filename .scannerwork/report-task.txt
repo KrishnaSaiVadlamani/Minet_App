@@ -1,0 +1,7 @@
+organization=krishnasaivadlamani
+projectKey=KrishnaSaiVadlamani_Minet_App
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.36792
+dashboardUrl=https://sonarcloud.io/dashboard?id=KrishnaSaiVadlamani_Minet_App
+ceTaskId=AYXgEETtclcQ9ZUU7ESW
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYXgEETtclcQ9ZUU7ESW
