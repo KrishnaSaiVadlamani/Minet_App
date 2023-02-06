@@ -115,7 +115,7 @@ const CheckoutCard: React.FC<CheckoutCardProps> = ({
       </TypographyGrid>
 
       <StepperBox>
-        <TransactionStepper />
+        <TransactionStepper symbol={symbol} />
       </StepperBox>
 
       <TotalBox spacing={2} direction={"column"}>

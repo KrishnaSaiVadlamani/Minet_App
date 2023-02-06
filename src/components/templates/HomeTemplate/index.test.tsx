@@ -5,7 +5,7 @@ import '@testing-library/jest-dom'
 import { BrowserRouter } from 'react-router-dom';
 import Header from '../../organisms/Header';
 import Footer from '../../molecules/Footer';
-import SideNavCompnent from '../../organisms/SideNav';
+import SideNavComponentLocation from '../../organisms/SideNav';
 import React from 'react';
 
 it('renders home template correctly', () => {
@@ -17,7 +17,7 @@ it('renders home template correctly', () => {
           children={
             <div style={{ height: '896px', width: '1296px' }}>content</div>
           }
-          sideNav={<SideNavCompnent />}
+          sideNav={<SideNavComponentLocation />}
         />
         </BrowserRouter>)
       .toJSON();
@@ -33,7 +33,7 @@ describe('Templates/Home Template', () => {
               children={
                 <div style={{ height: '896px', width: '1296px' }}>content</div>
               }
-              sideNav={<SideNavCompnent />}
+              sideNav={<SideNavComponentLocation />}
             />
             </BrowserRouter>)
         const template = screen.getByTestId('home-template')

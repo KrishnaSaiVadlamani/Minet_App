@@ -3,6 +3,7 @@ import ChipItem from '.';
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom'
 import theme from '../../../theme';
+import React from 'react';
 
 it('renders rounded chip correctly', () => {
     const tree = renderer

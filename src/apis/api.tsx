@@ -23,6 +23,13 @@ export const fetchCrtptoCurrenicyById = async (id: string) => {
   }
 };
 
+export const fetchCryptoCurrencies = async(coin)=>{
+  await axios
+  .put(`http://localhost:3000/cryptocurrencies/${coin.id}`, coin)
+  .then((response: any) => response.data)
+  .catch((err) => console.log(err));
+}
+
 export const fetchWatchList = async () => {
   try {
     const response = await axios.get(

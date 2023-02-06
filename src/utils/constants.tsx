@@ -13,8 +13,8 @@ import moment from 'moment'
 
 export const transactionHistoryStepper = {
   step1: ['Payment method', 'Visa credit ...8845'],
-  step2: ['Delivery fees', '0.001 BTC'],
-  step3: ['Deposit to', 'Bitcoin wallet'],
+  step2: ['Delivery fees', '0.001 '],
+  step3: ['Deposit to', ' Wallet'],
 }
 
 export const timeLineValues = ['1H', '24H', '1W', '1M', '1Y', 'ALL']

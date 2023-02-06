@@ -113,7 +113,7 @@ const CurrencyDetailCardComponent = (props: CurrencyDetailCardProps) => {
               image={coinIcon}
               imageHeight="56px"
               imageWidth="56px"
-              text={coinName}
+              text={coinName.toUpperCase()}
               textVariant={'h6'}
               textColor={'greyColors.grey500'}
               gapBetweenText="2px"

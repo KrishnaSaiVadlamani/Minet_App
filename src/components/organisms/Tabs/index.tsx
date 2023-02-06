@@ -103,14 +103,14 @@ const TabsComponent = (props: TabsProps) => {
   console.log(percentageChange)
   const Tab2 = () => (
     <Box display={'flex'} gap="12px" flexDirection={'column'}>
-      <TotalBalanceBox>
+      {/* <TotalBalanceBox>
         <TypographyComponent variant="subtitle1" color="textColor.highEmphasis">
           Total Balance
         </TypographyComponent>
         <TypographyComponent variant="subtitle1" color="textColor.highEmphasis">
          {coinBalance}({formatCurrency.format(currentValue*coinBalance)})
         </TypographyComponent>
-      </TotalBalanceBox>
+      </TotalBalanceBox> */}
       <SerachBox>
         <SearchField
           placeholder="Search All Assets"

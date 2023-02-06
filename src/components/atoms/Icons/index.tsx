@@ -20,12 +20,12 @@ const IconComponent = (props: IconComponentProps) => {
   return (
     <div>
       <StyledIcon
+        data-testid="iconComponent"
         src={src}
         width={width}
         height={height}
         padding={padding}
         alt="icon"
-        data-testid="iconComponent"
       />
     </div>
   );

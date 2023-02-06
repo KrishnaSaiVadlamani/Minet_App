@@ -30,8 +30,12 @@ const InnerBox = styled(Box)(() => ({
   gap: '8px',
   alignItems: 'center',
 }))
+interface TransactionStepperProps{
+  symbol:string
+}
 
-const TransactionStepper = () => {
+const TransactionStepper = (props:TransactionStepperProps) => {
+  const {symbol} = props
   return (
     <div>
       <OuterBox>
@@ -80,7 +84,7 @@ const TransactionStepper = () => {
               variant="body1"
               style={{ color: theme.palette.textColor.highEmphasis }}
             >
-              {transactionHistoryStepper.step2[1]}
+              {transactionHistoryStepper.step2[1]+ symbol.toUpperCase()}
             </TypographyComponent>
           </OuterBox>
         </InnerBox>
@@ -105,7 +109,7 @@ const TransactionStepper = () => {
               variant="body1"
               style={{ color: theme.palette.textColor.highEmphasis }}
             >
-              {transactionHistoryStepper.step3[1]}
+              {symbol.toUpperCase()+ transactionHistoryStepper.step3[1]}
             </TypographyComponent>
           </OuterBox>
         </InnerBox>

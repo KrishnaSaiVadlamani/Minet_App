@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { fetchCryptoCurrencies } from "../../../apis/api";
 import { coinTypes, CryptocurrencyType } from "../../../utils/types";
 
 export const useCoinDataHook = (filterValue: string, tableType: string) => {
@@ -107,48 +108,26 @@ export const useWatchlistHook = () => {
   const [watchlistData, setWatchlistData] = useState<string[]>([]);
   const [change, setChange] = useState<boolean>(true);
 
-  const setData = async () => {
-    await axios
-      .get("http://localhost:3000/watchlist/")
-      .then((response: any) => {
-        setWatchlistData(response.data);
-        console.log(response.data);
-      })
-      .catch((err) => console.log(err));
-  };
 
   const handleWatchlistDelete = async (coin: CryptocurrencyType) => {
     coin.isWatchlist = false;
-    // await axios
-    //   .delete(`http://localhost:3000/watchlist/${coin}`)
-    //   .then((response: any) => response.data)
-    //   .catch((err) => console.log(err));
-    await axios
-      .put(`http://localhost:3000/cryptocurrencies/${coin.id}`, coin)
-      .then((response: any) => response.data)
-      .catch((err) => console.log(err));
+    fetchCryptoCurrencies(coin)
 
     setChange(!change);
   };
 
   const handleWatchlistInsert = async (coin: CryptocurrencyType) => {
     coin.isWatchlist = true;
-    // await axios
-    //   .post(`http://localhost:3000/watchlist/`,{...temp})
-    //   .then((response: any) => response.data)
-    //   .catch((err) => console.log(err))
 
-    await axios
-      .put(`http://localhost:3000/cryptocurrencies/${coin.id}`, coin)
-      .then((response: any) => response.data)
-      .catch((err) => console.log(err));
+    fetchCryptoCurrencies(coin)
 
     setChange(!change);
   };
 
   useEffect(() => {
-    setData();
   }, [change]);
+
+  
 
   return {
     watchlistData,

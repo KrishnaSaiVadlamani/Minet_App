@@ -35,7 +35,7 @@
       ],
       "coinBalance": 0.0002563985,
       "currentValue": 85364.96,
-      "isWatchlist": false
+      "isWatchlist": true
     },
     {
       "id": "ethereum",
@@ -257,7 +257,7 @@
       ],
       "coinBalance": 0.0002563985,
       "currentValue": 24531.96,
-      "isWatchlist": false
+      "isWatchlist": true
     },
     {
       "id": "polkadot",
@@ -338,46 +338,22 @@
     {
       "id": 1,
       "name": "Cash",
-      "balance": 6380,
-      "investedAmount": 43620
+      "balance": 88820,
+      "investedAmount": 11180
     }
   ],
   "transactions": [
     {
-      "name": "matic-network",
+      "name": "ethereum",
       "from": "Guy Hawkins",
-      "date": 4,
+      "date": 6,
       "month": "Feb",
-      "quantity": 1359.70619469,
-      "symbol": "matic",
+      "quantity": 4.81912176,
+      "symbol": "eth",
       "transactionType": "buy",
-      "price": 1000.0000000033447,
+      "price": 5980.0000007664,
       "status": "success",
-      "id": 7
-    },
-    {
-      "name": "ripple",
-      "from": "Guy Hawkins",
-      "date": 4,
-      "month": "Feb",
-      "quantity": 2185.24305366,
-      "symbol": "xrp",
-      "transactionType": "buy",
-      "price": 1000.0000000006208,
-      "status": "success",
-      "id": 8
-    },
-    {
-      "name": "solana",
-      "from": "Guy Hawkins",
-      "date": 4,
-      "month": "Feb",
-      "quantity": 34.72222222,
-      "symbol": "sol",
-      "transactionType": "buy",
-      "price": 999.999999936,
-      "status": "success",
-      "id": 9
+      "id": 1
     },
     {
       "name": "ripple",
@@ -389,31 +365,19 @@
       "transactionType": "buy",
       "price": 1000.0000000006208,
       "status": "success",
-      "id": 10
+      "id": 2
     },
     {
-      "name": "matic-network",
+      "name": "binance-usd",
       "from": "Guy Hawkins",
       "date": 6,
       "month": "Feb",
-      "quantity": 1359.70619469,
-      "symbol": "matic",
+      "quantity": 1202.33493444,
+      "symbol": "busd",
       "transactionType": "buy",
-      "price": 1000.0000000033447,
+      "price": 1199.9999999973177,
       "status": "success",
-      "id": 11
-    },
-    {
-      "name": "usd-coin",
-      "from": "Guy Hawkins",
-      "date": 6,
-      "month": "Feb",
-      "quantity": 0.05229152,
-      "symbol": "usdc",
-      "transactionType": "buy",
-      "price": 1000.0000202112001,
-      "status": "success",
-      "id": 12
+      "id": 3
     }
   ]
 }

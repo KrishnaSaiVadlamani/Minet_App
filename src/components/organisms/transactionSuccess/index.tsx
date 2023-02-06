@@ -11,6 +11,7 @@ import { NavLink , BrowserRouter as Router} from 'react-router-dom'
 interface TransactionSuccessProps {
   successType: 'buy' | 'sell'
   price: string
+  symbol: string
 }
 
 const ContainerBox = styled(Box)(() => ({
@@ -37,7 +38,7 @@ const TextContainer = styled(Box)(() => ({
 }))
 
 const TransactionSuccess = (props: TransactionSuccessProps) => {
-  const { successType, price } = props
+  const { successType, price, symbol } = props
   return (
     <div>
       <ContainerBox>

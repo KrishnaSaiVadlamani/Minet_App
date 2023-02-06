@@ -5,7 +5,8 @@
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve --config ./webpack.config.js --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=7f83e5541f1d"
@@ -36,6 +37,10 @@
     "eslint": "^8.32.0",
     "eslint-webpack-plugin": "^3.2.0",
     "file-loader": "^6.2.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-transform-stub": "^2.0.0",
+    "ts-node": "^10.9.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"

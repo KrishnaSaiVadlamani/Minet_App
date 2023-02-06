@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders rounded chip correctly 1`] = `
+<div
+  chiptype="rounded"
+  chipvariant="light"
+  className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-13r5ioj-MuiChip-root"
+  data-testid="chip"
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+>
+  <span
+    className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+  >
+    24 h
+  </span>
+</div>
+`;
+
+exports[`renders squared chip correctly 1`] = `
+<div
+  chipcolor="rgba(247, 147, 26, 0.2)"
+  chiptype="squared"
+  className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-1avz1wk-MuiChip-root"
+  data-testid="chip"
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+>
+  <span
+    className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+  >
+    Bitcoin
+  </span>
+</div>
+`;

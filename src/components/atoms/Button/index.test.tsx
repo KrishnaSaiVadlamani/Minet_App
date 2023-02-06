@@ -7,7 +7,7 @@ it('should renders the button', async () => {
     const fn = jest.fn()
     render(
       <Button onClick={fn} backgroundColor="primary">
-        Sell
+        Buy
       </Button>
     )
     const ReactElement = await screen.getByText('Buy')

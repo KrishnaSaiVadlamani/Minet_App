@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Grid } from "@mui/material";
-import Tab from "../../organisms/Tabs/index";
-import DetailCard from "../../organisms/CurrencyDetailCard/index";
 import { useParams } from "react-router-dom";
 import { fetchCrtptoCurrenicyById } from "../../../apis/api";
-import { pictures } from "../../../utils/constants";
 import HomeTemplate from "../../templates/HomeTemplate";
 import Footer from "../../molecules/Footer";
 import Header from "../../organisms/Header";
@@ -18,7 +14,6 @@ const DetailsPage2 = () => {
     console.log(coinData)
 
     useEffect(()=>{
-        console.log("Inside Use effect")
         fetchCrtptoCurrenicyById(coinId!).then(data=>{
             console.log(data)
             setCoinData(data)});
