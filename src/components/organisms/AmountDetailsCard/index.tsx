@@ -11,6 +11,7 @@ export interface AmountDetailsCardProps {
   price: number
   transactionType: 'buy' | 'sell'
   coin: string
+  symbol: string
   handleChange: (quantity: number, amount: number) => void
 }
 
@@ -107,7 +108,7 @@ const StyledButton = styled(ButtonComponent)(() => ({
   padding: '0px 16px',
 }))
 const AmountDetailsCardComponent = (props: AmountDetailsCardProps) => {
-  const { balance, price, transactionType, coin, handleChange } = props
+  const { balance, price, transactionType, symbol,coin, handleChange } = props
   const {
     amount,
     setAmount,
@@ -158,7 +159,7 @@ const AmountDetailsCardComponent = (props: AmountDetailsCardProps) => {
           (transactionType === 'buy' ? 1000 : 1000 / price)) /
           2 +
         (transactionType === 'buy' ? 1000 : 1000 / price),
-      label: `1BTC = ${formatCurrency.format(price)}`,
+      label: `1${symbol.toUpperCase()} = ${formatCurrency.format(price)}`,
     },
   ]
 

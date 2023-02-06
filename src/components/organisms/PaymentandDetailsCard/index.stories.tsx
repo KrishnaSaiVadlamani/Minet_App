@@ -2,7 +2,7 @@ import React from "react";
 import PaymentandDetailsCard from ".";
 import { ComponentStory } from "@storybook/react";
 import IconComponent from "../../atoms/Icons";
-import DollerBlue from "../../../assets/icons/dollerBlue.svg";
+import DollerBlue from "../../../../public/assets/icons/dollerBlue.svg";
 
 export default {
   title: "organisms/PaymentandDetailsCard",

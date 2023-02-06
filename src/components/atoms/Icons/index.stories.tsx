@@ -1,7 +1,7 @@
 import IconComponent from "./index";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Doller from "../../../assets/icons/doller.svg";
-import Analytics from "../../../assets/icons/analytics.svg";
+import Doller from "/home/krisv/Desktop/Zemosolabs-20211002T184509Z-001/Zemosolabs/learnings/React_learnings/Minet_App/public/assets/icons/doller.svg";
+import Analytics from "/home/krisv/Desktop/Zemosolabs-20211002T184509Z-001/Zemosolabs/learnings/React_learnings/Minet_App/public/assets/icons/analytics.svg";
 import React from "react";
 
 export default {

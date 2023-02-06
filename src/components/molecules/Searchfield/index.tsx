@@ -2,8 +2,8 @@ import { TextField, styled, IconButton, Stack, Divider } from '@mui/material'
 import React from 'react'
 import theme from '../../../theme'
 import IconComponent from '../../atoms/Icons'
-import search from '../../../assets/icons/search.svg'
-import filter from '../../../assets/icons/filter.svg'
+import search from '../../../../public/assets/icons/search.svg'
+import filter from '../../../../public/assets/icons/filter.svg'
 
 interface SearchFieldProps {
   placeholder: string

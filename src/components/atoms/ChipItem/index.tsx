@@ -66,6 +66,7 @@ const ChipItem: React.FC<ChipProps> = ({
         chiptype={chiptype}
         chipcolor = {chipcolor}
         selected = {selected}
+        data-testid="chip"
       />
     )
   }
@@ -76,6 +77,7 @@ const ChipItem: React.FC<ChipProps> = ({
         label={label}
         chipvariant={chipvariant}
         chiptype={chiptype}
+        data-testid="chip"
       />
     )
   }

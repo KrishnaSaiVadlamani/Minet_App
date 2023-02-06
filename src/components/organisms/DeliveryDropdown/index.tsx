@@ -17,6 +17,7 @@ interface DeliveryProps {
   instantTime: string
   fee: string
   title: string
+  symbol: string
 }
 
 const StyledGrid = styled(Grid)({
@@ -37,7 +38,7 @@ const StyledMenuItem = styled(MenuItem)({
 })
 
 const DeliveryDropdown = (props: DeliveryProps) => {
-  const { instantTime, fee, title } = props
+  const { instantTime, fee, title, symbol } = props
   const [delivery, setDelivery] = React.useState('')
 
   const handleChange = (event: SelectChangeEvent) => {
@@ -102,7 +103,7 @@ const DeliveryDropdown = (props: DeliveryProps) => {
                         color={theme.palette.textColor.mediumEmphasis}
                         variant="caption1"
                       >
-                        Transaction fees : {fee} BTC
+                        Transaction fees : {fee} {symbol}
                       </Typography>
                     </Grid>
                   </Grid>
@@ -110,7 +111,7 @@ const DeliveryDropdown = (props: DeliveryProps) => {
               </Typography>
             </StyledMenuItem>
 
-            {DELIVERY_TYPES.map(({ type, time, fees, values }) => (
+            {DELIVERY_TYPES.map(({ type, time, fees, values}) => (
               <MenuItem
                 value={values}
                 sx={{
@@ -144,7 +145,7 @@ const DeliveryDropdown = (props: DeliveryProps) => {
                       color={theme.palette.textColor.mediumEmphasis}
                       variant="caption2"
                     >
-                      {type !== 'None' ? `Delivery fees : ${fees} BTC` : ''}
+                      {type !== 'None' ? `Delivery fees : ${fees}${symbol} ` : ''}
                     </Typography>
                   </Grid>
                 </Grid>

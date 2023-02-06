@@ -1,20 +1,34 @@
-import { TypographyProps } from "@mui/material";
-import Button, { ButtonProps } from "@mui/material/Button";
-import React from "react";
-import { TypographyComponent } from "../Typography";
+import React from 'react'
 
-interface ButtonComponentProps extends ButtonProps {
-  label: string;
-  textVariant?: TypographyProps["variant"];
-  textColor?: string;
+import {
+  Button as MuiButton,
+  ButtonProps as MuiButtonProps,
+} from '@mui/material'
+interface IButtonProps extends MuiButtonProps {
+  backgroundColor?: string | React.CSSProperties
+}
+const ButtonComponent: React.FC<IButtonProps> = ({
+  variant,
+  children,
+  backgroundColor,
+  ...props
+}) => {
+  return (
+    <MuiButton
+    data-testid="button"
+      variant={variant}
+      {...props}
+      sx={{
+        ...props.sx,
+        backgroundColor: backgroundColor,
+        '&:hover': {
+          backgroundColor: backgroundColor,
+        },
+      }}
+    >
+      {children}
+    </MuiButton>
+  )
 }
 
-export const ButtonComponent = (props: ButtonComponentProps) => {
-  return (
-  <div>
-    <Button type="button" {...props}>
-        <TypographyComponent children={props.label} variant={props.textVariant} color={props.textColor}/>
-    </Button>
-  </div>
-  )
-};
+export default ButtonComponent

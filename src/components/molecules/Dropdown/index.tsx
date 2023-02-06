@@ -4,7 +4,7 @@ import React from "react";
 import theme from "../../../theme";
 import IconComponent from "../../atoms/Icons";
 import TypographyComponent from "../../atoms/Typography";
-import ChevronDown from "./../../../assets/icons/Vector.svg";
+import ChevronDown from "../../../../public/assets/icons/Vector.svg";
 
 interface DropDownComponentProps {
   onChange: (arg: any) => void;

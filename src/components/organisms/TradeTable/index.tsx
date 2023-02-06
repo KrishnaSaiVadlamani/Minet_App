@@ -8,25 +8,31 @@ import {
   TableBody,
   IconButton,
   Grid,
+  Box,
+  Tab,
+  Tabs,
 } from '@mui/material'
-import Switch from '../../../assets/icons/switch.svg'
+import Switch from '../../../../public/assets/icons/switch.svg'
 import IconComponent from '../../atoms/Icons'
 import TypographyComponent from '../../atoms/Typography'
 import theme from '../../../theme/index'
 import IconWithTypography from '../../molecules/IconWithTypography'
-import selectedStar from '../../../assets/icons/filledStar.svg'
-import unselectedStar from '../../../assets/icons/emptyStar.svg'
+import selectedStar from '../../../../public/assets/icons/filledStar.svg'
+import unselectedStar from '../../../../public/assets/icons/emptyStar.svg'
 import {
   coinTypes,
-  CryptoCurrency,
+  CryptocurrencyType,
   timeProps,
 } from '../../../utils/types'
 import { useCoinDataHook, useWatchlistHook } from './hooks'
 import { pictures } from '../../../utils/constants'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 interface TradeTableProps {
   timePeriod: timeProps
   filterValue: string
+  tableType?: string
 }
 
 const StyledTable = styled(Table)({
@@ -92,6 +98,8 @@ const WatchTableCell = styled(TableCell)({
   width: '78px',
 })
 
+
+
 const renderTypography = (children: string) => {
   return (
     <TypographyComponent
@@ -102,8 +110,11 @@ const renderTypography = (children: string) => {
   )
 }
 
-const TradeTable: React.FC<TradeTableProps> = ({ timePeriod, filterValue }) => {
-  const { coinData, handleMarketCapClick } = useCoinDataHook(filterValue)
+
+
+const TradeTable: React.FC<TradeTableProps> = ({ timePeriod, filterValue, tableType }) => {
+  const nav = useNavigate();
+  const { coinData, handleMarketCapClick } = useCoinDataHook(filterValue,tableType)
   const { watchlistData, handleWatchlistDelete, handleWatchlistInsert} = useWatchlistHook()
 
   const MarketCapRightGrid = styled(Grid)({
@@ -132,7 +143,7 @@ const TradeTable: React.FC<TradeTableProps> = ({ timePeriod, filterValue }) => {
     )
   }
 
-  const getPriceChange = (coin: CryptoCurrency) => {
+  const getPriceChange = (coin: CryptocurrencyType) => {
     const priceChangeValues = {
       '1h': coin.priceChangeIn1hr,
       '24h': coin.priceChangeIn24hrs,
@@ -141,117 +152,107 @@ const TradeTable: React.FC<TradeTableProps> = ({ timePeriod, filterValue }) => {
       '1y': coin.priceChangeIn1year
     }
 
+
     return priceChangeValues[timePeriod]
   }
 
   return (
+    <>
     <TableContainer>
-      <StyledTable>
-        <StyledTableHead>
-          <TableRow>
-            <NameTableCell>{renderTypography('Name')}</NameTableCell>
-            <PriceTableCell>{renderTypography('Price')}</PriceTableCell>
-            <ChangeAndMarketCapTableCell>
-              {renderTypography('Change')}
-            </ChangeAndMarketCapTableCell>
-            <ChangeAndMarketCapTableCell>
-              {renderMarketCap()}
-            </ChangeAndMarketCapTableCell>
-            <WatchTableCell>{renderTypography('Watch')}</WatchTableCell>
-          </TableRow>
-        </StyledTableHead>
-        <TableBody>
-          {coinData.map((coin) => {
-            let priceChange = getPriceChange(coin)
-            const isPresent = watchlistData.includes(coin.id)
-            return (
-              <TableRow>
-                <FirstTableCell>
-                  <IconWithTypography
-                    image={pictures[coin.icon]}
-                    imageHeight={'42px'}
-                    imageWidth={'42px'}
-                    text={coin.name}
-                    textVariant={'body1'}
-                    textColor={theme.palette.textColor.highEmphasis}
-                    subText={coin.symbol.toUpperCase()}
-                    subTextVariant={'overline'}
-                    subTextColor={theme.palette.textColor.mediumEmphasis}
-                  />
-                </FirstTableCell>
-                <MidTableCell>
-                  <TypographyComponent
-                    variant={'body2'}
-                    children={`$${coin.price.toLocaleString('en-US', {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2,
-                    })}`}
-                  />
-                </MidTableCell>
-                <MidTableCell>
-                  <TypographyComponent
-                    variant={'body2'}
-                    children={
-                      priceChange > 0
+        <StyledTable>
+          <StyledTableHead>
+            <TableRow>
+              <NameTableCell>{renderTypography('Name')}</NameTableCell>
+              <PriceTableCell>{renderTypography('Price')}</PriceTableCell>
+              <ChangeAndMarketCapTableCell>
+                {renderTypography('Change')}
+              </ChangeAndMarketCapTableCell>
+              <ChangeAndMarketCapTableCell>
+                {renderMarketCap()}
+              </ChangeAndMarketCapTableCell>
+              <WatchTableCell>{renderTypography('Watch')}</WatchTableCell>
+            </TableRow>
+          </StyledTableHead>
+          <TableBody>
+            {coinData.map((coin) => {
+              let priceChange = getPriceChange(coin)
+              console.log("priceChange ",watchlistData.filter((value:any)=>value.coin==coin.id))
+              const temp:any = watchlistData.filter((value:any)=>value.id==coin.id);
+              const isPresent = temp[0]? temp[0]["id"]==coin.id : false;
+              return (
+                <TableRow onClick={() => nav(`/detailpage/${coin.id.toString()}`)}>
+                  <FirstTableCell>
+                    <IconWithTypography
+                      image={pictures[coin.icon]}
+                      imageHeight={'42px'}
+                      imageWidth={'42px'}
+                      text={coin.name}
+                      textVariant={'body1'}
+                      textColor={theme.palette.textColor.highEmphasis}
+                      subText={coin.symbol.toUpperCase()}
+                      subTextVariant={'overline'}
+                      subTextColor={theme.palette.textColor.mediumEmphasis} />
+                  </FirstTableCell>
+                  <MidTableCell>
+                    <TypographyComponent
+                      variant={'body2'}
+                      children={`$${coin.price.toLocaleString('en-US', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })}`} />
+                  </MidTableCell>
+                  <MidTableCell>
+                    <TypographyComponent
+                      variant={'body2'}
+                      children={priceChange > 0
                         ? `+${priceChange.toLocaleString('en-US', {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2,
-                          })}%`
+                          minimumFractionDigits: 2,
+                          maximumFractionDigits: 2,
+                        })}%`
                         : `${priceChange.toLocaleString('en-US', {
-                            minimumFractionDigits: 2,
-                            maximumFractionDigits: 2,
-                          })}%`
-                    }
-                    color={
-                      priceChange > 0
+                          minimumFractionDigits: 2,
+                          maximumFractionDigits: 2,
+                        })}%`}
+                      color={priceChange > 0
                         ? theme.palette.primary.success500
-                        : theme.palette.loss.borderColor
-                    }
-                  />
-                </MidTableCell>
-                <MidTableCell>
-                  <TypographyComponent
-                    variant={'body2'}
-                    children={Intl.NumberFormat('en-US', {
-                      notation: 'compact',
-                      maximumFractionDigits: 1,
-                    }).format(coin.marketCap)}
-                    color={theme.palette.textColor.highEmphasis}
-                  />
-                </MidTableCell>
-                <LastTableCell>
-                  {isPresent ? (
-                    <IconButton
-                      onClick={() =>
-                        handleWatchlistDelete(coin.id as coinTypes)
-                      }
-                    >
-                      <IconComponent
-                        src={selectedStar}
-                        height={'19px'}
-                        width={'18px'}
-                      />
-                    </IconButton>
-                  ) : (
-                    <IconButton
-                      onClick={() =>
-                        handleWatchlistInsert(coin.id as coinTypes)
-                      }
-                    >
-                      <IconComponent
-                        src={unselectedStar}
-                        height={'19px'}
-                        width={'18px'}
-                      />
-                    </IconButton>
-                  )}
-                </LastTableCell>
-              </TableRow>
-            )
-          })}
-        </TableBody>
-      </StyledTable>
-    </TableContainer>
+                        : theme.palette.loss.borderColor} />
+                  </MidTableCell>
+                  <MidTableCell>
+                    <TypographyComponent
+                      variant={'body2'}
+                      children={Intl.NumberFormat('en-US', {
+                        notation: 'compact',
+                        maximumFractionDigits: 1,
+                      }).format(coin.marketCap)}
+                      color={theme.palette.textColor.highEmphasis} />
+                  </MidTableCell>
+                  <LastTableCell>
+                    {coin.isWatchlist ? (
+                      <IconButton
+                        onClick={() => handleWatchlistDelete(coin)}
+                      >
+                        <IconComponent
+                          src={selectedStar}
+                          height={'19px'}
+                          width={'18px'} />
+                      </IconButton>
+                    ) : (
+                      <IconButton
+                        onClick={() => handleWatchlistInsert(coin)}
+                      >
+                        <IconComponent
+                          src={unselectedStar}
+                          height={'19px'}
+                          width={'18px'} />
+                      </IconButton>
+                    )}
+                  </LastTableCell>
+                </TableRow>
+              )
+            })}
+          </TableBody>
+        </StyledTable>
+      </TableContainer></>
   )
 }
 

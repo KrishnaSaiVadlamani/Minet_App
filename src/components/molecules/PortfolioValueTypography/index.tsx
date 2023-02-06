@@ -1,8 +1,8 @@
 import { Box, Grid, styled } from '@mui/material'
 import React from 'react'
 import TypographyComponent from '../../atoms/Typography'
-import decreasingTrend from '../../../assets/icons/redDecreasingTrend.svg'
-import increasingTrend from '../../../assets/icons/greenIncreasingTrend.svg'
+import decreasingTrend from '../../../../public/assets/icons/redDecreasingTrend.svg'
+import increasingTrend from '../../../../public/assets/icons/greenIncreasingTrend.svg'
 import IconComponent from '../../atoms/Icons'
 import { formatCurrency } from '../../../utils/constants'
 
@@ -52,10 +52,12 @@ const PortfolioValueTypographyComponent = (
         variant={isInDashBoardPage ? 'overline' : 'caption2'}
         color={percentChange >= 0 ? 'primary.success500' : 'loss.borderColor'}
       >
-        {percentageForamttedString}%
+        {percentageForamttedString}
       </TypographyComponent>
+      %
     </StyledInnerBox>
   )
+  console.log(percentChange+ "******")
   const percentageForamttedString = percentChange.toFixed(1)
   return (
     <StyledGrid

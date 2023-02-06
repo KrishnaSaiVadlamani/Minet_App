@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import ChooseCryptoCard from '.'
-import bitcoin from '../../../assets/images/coins/bitcoin.svg'
+import bitcoin from '/home/krisv/Desktop/Zemosolabs-20211002T184509Z-001/Zemosolabs/learnings/React_learnings/Minet_App/public/assets/images/coins/bitcoin.svg'
 export default {
   title: 'Molecules/ChooseCryptoCard',
   component: ChooseCryptoCard,

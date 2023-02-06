@@ -1,34 +1,30 @@
-import { Typography } from "@mui/material";
-import { ComponentStory } from "@storybook/react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
-import { ButtonComponent } from ".";
+import ButtonComponent from ".";
 
 export default {
-  title: "atoms/Button",
+  title: 'Atoms/Button',
   component: ButtonComponent,
-};
+} as ComponentMeta<typeof ButtonComponent>
 
-const Template: ComponentStory<typeof ButtonComponent> = (args) => (
-  <ButtonComponent {...args} />
-);
+const Template: ComponentStory<typeof ButtonComponent> = (args) => <ButtonComponent {...args} />
 
-export const Outlined = Template.bind({});
+export const Outlined = Template.bind({})
+export const Text = Template.bind({})
+export const Contained = Template.bind({})
 
 Outlined.args = {
-  variant: "outlined",
-  children: "outlined",
-};
-
-export const Text = Template.bind({});
-
+  label: 'Button',
+  variant: 'outlined',
+  children: 'outlined',
+}
 Text.args = {
-  variant: "text",
-  children: "text",
-};
-
-export const Contained = Template.bind({});
-
+  label: 'Button',
+  variant: 'text',
+  children: 'Text',
+}
 Contained.args = {
-  variant: "contained",
-  children: "contained",
-};
+  label: 'Button',
+  variant: 'contained',
+  children: 'Contained',
+}

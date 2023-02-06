@@ -1,9 +1,9 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 import IconWithTypography from './index'
-import Image from '../../../assets/images/coins/bitcoin.svg'
+import Image from '../../../../public/assets/images/coins/bitcoin.svg'
 import theme from '../../../theme'
-import IncreasingTrendArrow from '../../../assets/icons/greenIncreasingTrend.svg'
+import IncreasingTrendArrow from '../../../../public/assets/icons/greenIncreasingTrend.svg'
 
 export default {
   title: 'molecules/IconWithTypography',

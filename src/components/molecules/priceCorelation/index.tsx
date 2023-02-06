@@ -6,7 +6,7 @@ import theme from '../../../theme'
 import ValueChangeTypographyComponent from '../ValueChangeTypography/index'
 import TypographyComponent from '../../atoms/Typography'
 import IconComponent from '../../atoms/Icons'
-import Slider from '../../../assets/images/slider.svg'
+import Slider from '../../../../public/assets/images/slider.svg'
 import { priceCorelationMockData } from '../../../utils/constants'
 
 const PriceCorelation = () => {

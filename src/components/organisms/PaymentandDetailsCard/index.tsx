@@ -4,7 +4,7 @@ import theme from "../../../theme"
 import TypographyComponent from "../../atoms/Typography"
 
 interface PaymentandDetailsCardProps {
-  variant: "payment";
+  variant: "payment" | "balance";
   title: string;
   icon: React.ReactElement;
   coinType?: string;
@@ -57,6 +57,13 @@ const PaymentandDetailsCard = (props: PaymentandDetailsCardProps) => {
                         <TypographyComponent
                           variant="caption1"
                           children={coinType}
+                        />
+                      </Grid>
+                      <Grid item>
+                        <TypographyComponent
+                          variant="subtitle1"
+                          children={`Total balance: ${balance}`}
+                          color={theme.palette.textColor.mediumEmphasis}
                         />
                       </Grid>
                     </Grid>

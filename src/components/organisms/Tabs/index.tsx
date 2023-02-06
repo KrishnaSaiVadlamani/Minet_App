@@ -8,9 +8,10 @@ import IconWithTypography from '../../molecules/IconWithTypography'
 import SearchField from '../../molecules/Searchfield'
 import GraphComponent from '../graph'
 import TransactionHistory from '../TransactionHistory'
-import WebsiteIcon from '../../../assets/icons/website.svg'
-import PaperWorkIcon from '../../../assets/icons/paperWork.svg'
+import WebsiteIcon from '../../../../public/assets/icons/website.svg'
+import PaperWorkIcon from '../../../../public/assets/icons/paperWork.svg'
 import PriceCorelation from '../../molecules/priceCorelation'
+import { Transaction } from '../../../utils/types'
 
 const StyledBox = styled(Box)({
   width: '100%',
@@ -55,8 +56,9 @@ interface TabsProps {
   coinBalance: number
   currentValue: number
   coinName: string
+  transactions: Transaction[]
 }
-interface TabPanelProps {
+export interface TabPanelProps {
   children?: React.ReactNode
   index: number
   value: number
@@ -91,12 +93,14 @@ const TabsComponent = (props: TabsProps) => {
     coinBalance,
     currentValue,
     coinName,
+    transactions
   } = props
+  console.log("propss ",transactions)
   const [value, setValue] = useState(0)
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue)
   }
-
+  console.log(percentageChange)
   const Tab2 = () => (
     <Box display={'flex'} gap="12px" flexDirection={'column'}>
       <TotalBalanceBox>
@@ -104,7 +108,7 @@ const TabsComponent = (props: TabsProps) => {
           Total Balance
         </TypographyComponent>
         <TypographyComponent variant="subtitle1" color="textColor.highEmphasis">
-          {coinBalance}({formatCurrency.format(currentValue*coinBalance)})
+         {coinBalance}({formatCurrency.format(currentValue*coinBalance)})
         </TypographyComponent>
       </TotalBalanceBox>
       <SerachBox>
@@ -120,7 +124,7 @@ const TabsComponent = (props: TabsProps) => {
           width="77px"
         />
       </SerachBox>
-      <TransactionHistory />
+      <TransactionHistory transactions={transactions} />
     </Box>
   )
 
@@ -142,9 +146,7 @@ const TabsComponent = (props: TabsProps) => {
               data={currencyData}
               investmentValue={currentValue}
               typeOfInvestment="Current Value"
-              percentChange={percentageChange}
-              dashboardPage={false}
-              />
+              percentChange={percentageChange} Page={false}              />
           </Box>
           <Grid container display={'flex'} direction="row" spacing={'24px'}>
             <Grid

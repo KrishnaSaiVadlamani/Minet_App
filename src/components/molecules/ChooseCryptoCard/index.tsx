@@ -4,7 +4,8 @@ import Box from '@mui/material/Box'
 import TypographyComponent from '../../atoms/Typography'
 import IconComponent from '../../atoms/Icons'
 import { Grid } from '@mui/material'
-import Tick from '../../../assets/icons/selected.svg'
+// import Tick from '/home/krisv/Desktop/Zemosolabs-20211002T184509Z-001/Zemosolabs/learnings/React_learnings/Minet_App/public/assets/icons/selected.svg'
+import Tick from '../../../../public/assets/icons/selected.svg'
 
 type Props = {
   selected: boolean

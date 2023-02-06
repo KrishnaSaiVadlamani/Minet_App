@@ -8,6 +8,7 @@ import ChooseCrypto from "../../molecules/ChooseCryptoCard";
 
 interface ChooseCurrencyProps {
   currenciesData: CryptoCurrency[];
+  coinId?:string
 }
 
 const CustomBox = styled(Box)({
@@ -61,7 +62,7 @@ const ChooseCurrency: React.FC<ChooseCurrencyProps> = (
                     image={pictures[currency.icon]}
                     name={currency.name}
                     value={currency.price}
-                    selected={currency.id === "bitcoin" ? true : false}
+                    selected={currency.id === (props.coinId || "bitcoin") ? true : false}
                   />
                   
                 </Grid>

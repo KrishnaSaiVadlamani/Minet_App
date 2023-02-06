@@ -4,9 +4,11 @@ import theme from "../../../theme";
 import ButtonComponent from "../../atoms/Button";
 import TypographyComponent from "../../atoms/Typography";
 import AvatarDropdown from "../../molecules/AvatarDropdown";
+import { NavLink,BrowserRouter as Router, useNavigate } from "react-router-dom";
 
 interface IHeaderProps {
   pageName: string;
+  coinId?: string;
 }
 
 const CustomBox = styled(Box)({
@@ -38,6 +40,7 @@ const StyledTypographyComponent = styled(TypographyComponent)({
 
 const Header = (props: IHeaderProps) => {
   const { pageName } = props;
+  const navigate = useNavigate();
   return (
     <CustomBox>
       <Grid container>
@@ -60,21 +63,29 @@ const Header = (props: IHeaderProps) => {
           justifyContent="flex-end"
           columnGap={2}
         >
-            <Grid item>
-                <CustomButton
-                  variant="contained" label={"SELL"}
-                 sx = {{backgroundColor: theme.palette.primary.warning300}}
-                >
-                  <TypographyComponent variant="button">
-                    SELL
-                  </TypographyComponent>
-                </CustomButton>
-            </Grid>
+          <Grid item>
+            {/* <NavLink to="/sell" style={{ textDecoration: "none" }}> */}
+              <CustomButton
+                variant="contained"
+                sx={{ backgroundColor: theme.palette.primary.warning300 }}
+              >
+                <TypographyComponent variant="button">SELL</TypographyComponent>
+              </CustomButton>
+            {/* </NavLink> */}
+          </Grid>
 
           <Grid item>
-              <CustomButton variant="contained" sx = {{backgroundColor:"primary"}} label={"BUY"}>
+            {/* <NavLink to="/purchase" style={{ textDecoration: "none" }}> */}
+              <CustomButton
+                variant="contained"
+                sx={{ backgroundColor: "primary" }}
+                onClick={()=>{
+                  props.coinId&&navigate("/purchase/"+props.coinId);
+                }}
+              >
                 <TypographyComponent variant="button">BUY</TypographyComponent>
               </CustomButton>
+            {/* </NavLink> */}
           </Grid>
           <Divider orientation="vertical" variant="middle" flexItem />
           <Grid item display="flex" alignItems="center">

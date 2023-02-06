@@ -1,4 +1,6 @@
 const path = require("path");
+const port = process.env.PORT || 8000;
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, "./src/index.tsx"),
@@ -18,32 +20,24 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
+        test: /\.(png|jpe?g|gif|jp2|webp)$/,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+        },
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        type: "asset/resource",
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-        type: 'asset/inline',
+        type: "asset/inline",
       },
     ],
   },
   resolve: {
-    extensions: ["*", ".js"],
+    extensions: [".tsx",".ts", ".js"],
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -51,6 +45,14 @@ module.exports = {
   },
   devServer: {
     static: path.resolve(__dirname, "./dist"),
-    open: true
+    open: true,
+    port: port
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Minet",
+      filename: "index.html",
+      template: path.resolve(__dirname, "./public/index.html"),
+    }),
+  ],
 };

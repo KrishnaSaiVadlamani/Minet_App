@@ -1,14 +1,21 @@
-import { Typography,TypographyProps } from "@mui/material";
+import { ThemeProvider, Typography,TypographyProps } from "@mui/material";
 import React from "react";
+import theme from "../../../theme";
+
 
 interface TypographyComponentPros extends TypographyProps {
   children?: string;
 }
 
-export const TypographyComponent = (props: TypographyComponentPros) => {
+const TypographyComponent = (props: TypographyComponentPros) => {
   return (
-    <Typography variant={props.variant} {...props}>
+  <ThemeProvider theme={theme}>
+    <Typography data-testid="Hello" variant={props.variant} {...props}>
       {props.children}
     </Typography>
+    </ThemeProvider>
+  
   );
 };
+
+export default TypographyComponent;

@@ -1,5 +1,5 @@
 import React from "react";
-import { AvatarComponent } from ".";
+import  AvatarComponent  from ".";
 import {ComponentStory} from "@storybook/react"
 
 export default{

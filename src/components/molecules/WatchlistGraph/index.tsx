@@ -3,8 +3,8 @@ import Chart from 'react-apexcharts'
 import theme from '../../../theme/index'
 import IconWithTypography from '../IconWithTypography'
 import { ProfitData, LossData } from '../../../utils/constant'
-import IncreasingTrendArrow from '../../../assets/icons/greenIncreasingTrend.svg'
-import DecreasingTrendArrow from '../../../assets/icons/redDecreasingTrend.svg'
+import IncreasingTrendArrow from '../../../../public/assets/icons/greenIncreasingTrend.svg'
+import DecreasingTrendArrow from '../../../../public/assets/icons/redDecreasingTrend.svg'
 import { Grid, styled } from '@mui/material'
 
 type Props = {

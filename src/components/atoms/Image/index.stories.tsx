@@ -1,7 +1,7 @@
 import React from "react";
-import { ImageComponent } from ".";
+import ImageComponent  from ".";
 import {ComponentStory} from "@storybook/react"
-import Bitcoin from '../../../assets/images/coins/bitcoin.svg'
+import Bitcoin from '/home/krisv/Desktop/Zemosolabs-20211002T184509Z-001/Zemosolabs/learnings/React_learnings/Minet_App/public/assets/images/coins/bitcoin.svg'
 export default{
     title: 'atoms/Image',
     component: ImageComponent,

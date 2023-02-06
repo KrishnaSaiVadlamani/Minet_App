@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import CurrencyDetailCardComponent from '.'
-import BitCoinIcon from '../../../assets/images/coins/bitcoin.svg'
+import BitCoinIcon from '../../../../public/assets/images/coins/bitcoin.svg'
 
 export default {
   title: 'Organisms/CurrencyDetailCard',

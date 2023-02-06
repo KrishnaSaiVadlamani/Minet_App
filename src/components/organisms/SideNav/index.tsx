@@ -2,13 +2,15 @@ import { Grid, styled } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import ImageComponent from '../../atoms/Image'
-import Logo from '../../../assets/icons/logo.svg'
-import DashboardInActive from '../../../assets/icons/dashboard.svg'
-import Analytics from '../../../assets/icons/analytics.svg'
-import Trades from '../../../assets/icons/trade.svg'
-import Notification from '../../../assets/icons/notification.svg'
-import LogOut from '../../../assets/icons/logout.svg'
+import Logo from '../../../../public/assets/icons/logo.svg'
+import DashboardInActive from '../../../../public/assets/icons/dashboard.svg'
+import DashboardActive from '../../../../public/assets/icons/dashboardactive.svg'
+import Analytics from '../../../../public/assets/icons/analytics.svg'
+import Trades from '../../../../public/assets/icons/trade.svg'
+import Notification from '../../../../public/assets/icons/notification.svg'
+import LogOut from '../../../../public/assets/icons/logout.svg'
 import IconComponent from '../../atoms/Icons'
+import { Link, useLocation, BrowserRouter as Router } from 'react-router-dom'
 
 const StyledGrid = styled(Grid)(() => ({
   width: '80px',
@@ -30,19 +32,22 @@ const StyledBox = styled(Box)(() => ({
 
 const iconsList = [Analytics, Trades, Notification, LogOut]
 
-const SideNavComponent = () => {
+const SideNavComponentLocation = () => {
+  const location = useLocation().pathname
   return (
     <StyledGrid>
       <StyledBox>
         <ImageComponent src={Logo} width="32px" height="32px" />
       </StyledBox>
+      <Link to="/">
       <StyledBox>  
           <IconComponent
-            src={DashboardInActive}
+            src={location !== '/' ? DashboardInActive : DashboardActive}
             width="20px"
             height="20px"
           />
       </StyledBox>
+      </Link>
       {iconsList.map((iconSrc) => (
         <StyledBox key={iconSrc}>
           <IconComponent src={iconSrc} height="20px" width="auto" />
@@ -52,4 +57,9 @@ const SideNavComponent = () => {
   )
 }
 
-export default SideNavComponent
+
+
+export default SideNavComponentLocation
+
+
+

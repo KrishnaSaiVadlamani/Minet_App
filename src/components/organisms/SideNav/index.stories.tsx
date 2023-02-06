@@ -11,4 +11,4 @@ const Template: ComponentStory<typeof SideNavComponent> = () => (
   <SideNavComponent />
 )
 
-export const SearchFieldWithoutFilter = Template.bind({})
+export const SideNavigation = Template.bind({})

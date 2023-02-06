@@ -1,5 +1,5 @@
 import React from "react";
-import { TypographyComponent } from ".";
+import TypographyComponent  from ".";
 import {Story} from '@storybook/react';
 
 export default {

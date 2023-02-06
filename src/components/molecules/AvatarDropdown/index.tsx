@@ -2,7 +2,7 @@ import { Grid, styled } from "@mui/material"
 import IconComponent from "../../atoms/Icons"
 import AvatarComponent from "../../atoms/Avatar"
 import React from "react"
-import chevronDropdown from "../../../assets/icons/chevronDown.svg"
+import chevronDropdown from "../../../../public/assets/icons/chevronDown.svg"
 
 const StyledIconContainer = styled(Grid)({
     paddingTop: '7px',

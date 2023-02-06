@@ -4,10 +4,10 @@ import IconComponent from '../../atoms/Icons'
 import TypographyComponent from '../../atoms/Typography'
 import IconWithTypography from '../../molecules/IconWithTypography'
 import CardTemplate from '../../templates/cardTemplate'
-import UpTrend from '../../../assets/icons/greenIncreasingTrend.svg'
-import DownTrend from '../../../assets/icons/redDecreasingTrend.svg'
-import EmptyStar from '../../../assets/icons/emptyStar.svg'
-import FilledStar from '../../../assets/icons/filledStar.svg'
+import UpTrend from '../../../../public/assets/icons/greenIncreasingTrend.svg'
+import DownTrend from '../../../../public/assets/icons/redDecreasingTrend.svg'
+import EmptyStar from '../../../../public/assets/icons/emptyStar.svg'
+import FilledStar from '../../../../public/assets/icons/filledStar.svg'
 import { compactFormat } from '../../../utils/constants'
 import ButtonComponent from '../../atoms/Button'
 import theme from '../../../theme'
@@ -30,7 +30,7 @@ const StyledBoxForInfo = styled(Box)(() => ({
   flexDirection: 'column',
 }))
 
-interface CurrencyDetailCardProps {
+export interface CurrencyDetailCardProps {
   coinIcon: string
   coinName: string
   coinSymbol: string
@@ -62,15 +62,11 @@ const CurrencyDetailCardComponent = (props: CurrencyDetailCardProps) => {
       </TypographyComponent>
       <StyledInnerBox>
         <Box
-          width="24px"
-          height="24px"
           alignItems={'center'}
           justifyContent="center"
         >
           <IconComponent
             src={percentageChange >= 0 ? UpTrend : DownTrend}
-            width="9px"
-            height="9px"
             padding="7.5px"
           />
         </Box>

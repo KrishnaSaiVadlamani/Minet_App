@@ -25,6 +25,7 @@ const IconComponent = (props: IconComponentProps) => {
         height={height}
         padding={padding}
         alt="icon"
+        data-testid="iconComponent"
       />
     </div>
   );
