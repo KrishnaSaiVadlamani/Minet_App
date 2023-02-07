@@ -63,6 +63,7 @@ const PortfolioValueTypographyComponent = (
     <StyledGrid
       direction={'column'}
       width={width}
+      data-testid="PortfolioValueTypography"
       height={isInDashBoardPage ? '66px' : '80px'}
       gap={isInDashBoardPage ? '8px' : '2px'}
     >

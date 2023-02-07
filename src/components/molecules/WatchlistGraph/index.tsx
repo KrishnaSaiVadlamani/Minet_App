@@ -74,7 +74,7 @@ const Graph = (props) => {
     },
   ]
   return (
-    <Grid container direction="column">
+    <Grid container direction="column" data-testid="watchlistGraph">
       <Grid item>
         <InnerDiv>
           <IconWithTypography

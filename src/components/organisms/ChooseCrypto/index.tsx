@@ -36,7 +36,7 @@ const ChooseCurrency: React.FC<ChooseCurrencyProps> = (
 ) => {
   const { currenciesData } = props;
   return (
-    <CustomBox>
+    <CustomBox data-testid='chooseCurrency'>
       <Grid container direction={"column"} gap={2} height="100%">
         <Grid item>
           <TypographyComponent

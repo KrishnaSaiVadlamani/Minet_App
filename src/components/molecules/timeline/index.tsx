@@ -63,6 +63,7 @@ export default function TimeLineTabs(props: TimeLineTabsProps) {
         onChange={handleChange}
         variant="scrollable"
         scrollButtons={false}
+        data-testid="tabs"
       >
         {timeLineValues.map((value)=>{
           return (
@@ -70,6 +71,7 @@ export default function TimeLineTabs(props: TimeLineTabsProps) {
               key={`tab-${value}`}
               label={value}
               typevariant={typevariant}
+              data-testid={`tab-${value}`}
               onClick={onSelectTab}
               disabled={value !=='1M'}
             />

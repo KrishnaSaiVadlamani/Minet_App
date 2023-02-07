@@ -38,7 +38,7 @@ const TransactionStepper = (props:TransactionStepperProps) => {
   const {symbol} = props
   return (
     <div>
-      <OuterBox>
+      <OuterBox data-testid="transaction-stepper">
         <InnerBox>
           <ImageBox>
             <IconComponent

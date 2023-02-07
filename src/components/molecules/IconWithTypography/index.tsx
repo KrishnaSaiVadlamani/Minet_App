@@ -63,6 +63,7 @@ const IconWithTypography = (props: IconWithTypographyProps) => {
     <div>
       <FlexRowBox
         iconandtextgap={iconandtextgap}
+        data-testId="iconWithTypography"
       >
         <ImageComponent src={image}/>
         <FlexColumnBox gap={gapBetweenText? gapBetweenText : '4px'}>
@@ -76,6 +77,7 @@ const IconWithTypography = (props: IconWithTypographyProps) => {
             <TypographyComponent
               variant={subTextVariant}
               style={{ color: subTextColor }}
+              data-testid="iconWithTypography-subtext"
             >
               {subText}
             </TypographyComponent>

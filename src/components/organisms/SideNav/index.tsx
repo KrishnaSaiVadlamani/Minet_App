@@ -35,12 +35,12 @@ const iconsList = [Analytics, Trades, Notification, LogOut]
 const SideNavComponentLocation = () => {
   const location = useLocation().pathname
   return (
-    <StyledGrid>
+    <StyledGrid data-testid="sideNav">
       <StyledBox>
         <ImageComponent src={Logo} width="32px" height="32px" />
       </StyledBox>
       <Link to="/">
-      <StyledBox>  
+      <StyledBox data-testid="Trade">  
           <IconComponent
             src={location !== '/' ? DashboardInActive : DashboardActive}
             width="20px"

@@ -39,7 +39,7 @@ const ChooseCrypto: React.FC<Props> = (props) => {
     paddingBottom: '24px',
   })
   return (
-    <MyComponent >
+    <MyComponent data-testid={name}>
       <Grid container>
         {selected && (
           <Grid item xs={12}>

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders transaction history correctly 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container css-5jjnw1-MuiGrid-root"
+  data-testid="transaction-history"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11.8 css-zbbsip-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-0.2 css-z96tjo-MuiGrid-root"
+  >
+    <div>
+      <img
+        alt="icon"
+        className="css-0"
+        data-testid="iconComponent"
+        src={
+          {
+            "process": [Function],
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;

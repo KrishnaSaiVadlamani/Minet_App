@@ -143,7 +143,7 @@ const renderCards = (transactions: Transaction[]) => {
 
 const TransactionHistory = (props:TransactionHistoryProps) => {
   return (
-    <StyledContainer container >
+    <StyledContainer container data-testid="transaction-history">
       <LeftContainer item xs={11.8}>
         {renderCards(props.transactions)}
       </LeftContainer>

@@ -10,7 +10,7 @@ const StyledIconContainer = styled(Grid)({
 
 const AvatarDropdown = () => {
     return(
-        <Grid container columnSpacing={1}>
+        <Grid container data-testid='avatar-dropdown' columnSpacing={1}>
             <Grid item>
                 <AvatarComponent width='32px' height='32px'/>
             </Grid>

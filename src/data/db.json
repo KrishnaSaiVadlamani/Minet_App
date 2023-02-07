@@ -35,7 +35,7 @@
       ],
       "coinBalance": 0.0002563985,
       "currentValue": 85364.96,
-      "isWatchlist": true
+      "isWatchlist": false
     },
     {
       "id": "ethereum",
@@ -109,7 +109,7 @@
       ],
       "coinBalance": 0.0002563985,
       "currentValue": 24531.96,
-      "isWatchlist": true
+      "isWatchlist": false
     },
     {
       "id": "ripple",
@@ -146,7 +146,7 @@
       ],
       "coinBalance": 0.0002563985,
       "currentValue": 11405.96,
-      "isWatchlist": false
+      "isWatchlist": true
     },
     {
       "id": "binance-usd",
@@ -220,7 +220,7 @@
       ],
       "coinBalance": 0.0002563985,
       "currentValue": 14236.96,
-      "isWatchlist": false
+      "isWatchlist": true
     },
     {
       "id": "dogecoin",
@@ -331,15 +331,15 @@
       ],
       "coinBalance": 0.0002563985,
       "currentValue": 24531.96,
-      "isWatchlist": true
+      "isWatchlist": false
     }
   ],
   "wallet": [
     {
       "id": 1,
       "name": "Cash",
-      "balance": 88820,
-      "investedAmount": 11180
+      "balance": 38010,
+      "investedAmount": 61990
     }
   ],
   "transactions": [
@@ -378,6 +378,102 @@
       "price": 1199.9999999973177,
       "status": "success",
       "id": 3
+    },
+    {
+      "name": "polkadot",
+      "from": "Guy Hawkins",
+      "date": 6,
+      "month": "Feb",
+      "quantity": 170.94017094,
+      "symbol": "dot",
+      "transactionType": "buy",
+      "price": 999.9999999989999,
+      "status": "success",
+      "id": 4
+    },
+    {
+      "name": "ethereum",
+      "from": "Guy Hawkins",
+      "date": 6,
+      "month": "Feb",
+      "quantity": 8.93713383,
+      "symbol": "eth",
+      "transactionType": "buy",
+      "price": 11089.999998308702,
+      "status": "success",
+      "id": 5
+    },
+    {
+      "name": "dogecoin",
+      "from": "Guy Hawkins",
+      "date": 7,
+      "month": "Feb",
+      "quantity": 286196.76687365,
+      "symbol": "doge",
+      "transactionType": "buy",
+      "price": 16270.00000000013,
+      "status": "success",
+      "id": 6
+    },
+    {
+      "name": "binance-usd",
+      "from": "Guy Hawkins",
+      "date": 7,
+      "month": "Feb",
+      "quantity": 1001.9457787,
+      "symbol": "busd",
+      "transactionType": "buy",
+      "price": 999.9999999977646,
+      "status": "success",
+      "id": 7
+    },
+    {
+      "name": "ethereum",
+      "from": "Guy Hawkins",
+      "date": 7,
+      "month": "Feb",
+      "quantity": 0.8058732,
+      "symbol": "eth",
+      "transactionType": "buy",
+      "price": 999.999995148,
+      "status": "success",
+      "id": 8
+    },
+    {
+      "name": "usd-coin",
+      "from": "Guy Hawkins",
+      "date": 7,
+      "month": "Feb",
+      "quantity": 0.05229152,
+      "symbol": "usdc",
+      "transactionType": "buy",
+      "price": 1000.0000202112001,
+      "status": "success",
+      "id": 9
+    },
+    {
+      "name": "binance-usd",
+      "from": "Guy Hawkins",
+      "date": 7,
+      "month": "Feb",
+      "quantity": 22633.95514088,
+      "symbol": "busd",
+      "transactionType": "buy",
+      "price": 22589.99999999641,
+      "status": "success",
+      "id": 10
+    },
+    {
+      "name": "ethereum",
+      "from": "Guy Hawkins",
+      "date": 7,
+      "month": "Feb",
+      "quantity": 4.94000274,
+      "symbol": "eth",
+      "transactionType": "buy",
+      "price": 6130.0000000386,
+      "status": "success",
+      "id": 11
     }
   ]
 }

@@ -108,6 +108,7 @@ const SearchField: React.FC<SearchFieldProps> = ({
       InputProps={{
         endAdornment: renderEndAdornment(filter, handleClick ? handleClick : () => {}),
       }}
+      data-testid='search-bar'
       backgroundColor={backgroundColor}
       value={value}
     />

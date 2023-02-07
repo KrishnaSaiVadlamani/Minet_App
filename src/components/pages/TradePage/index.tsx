@@ -151,6 +151,7 @@ const TradePage = () => {
       footer={<Footer />}
       sideNav={<SideNavCompnent />}
       children={renderChildren(timePeriod)}
+      data-testid='trade-page'
     />
   );
 };

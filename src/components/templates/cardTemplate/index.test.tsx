@@ -17,3 +17,16 @@ it("renders card template", () => {
   const element = screen.getByTestId("card-template");
   expect(element).toBeDefined();
 });
+it('renders card template with default padding', () => {
+  render(
+    <CardTemplate
+      LeftComponet={<p>LeftComponent</p>}
+      RightComponet={<p>RighttComponent</p>}
+      cardHeight="80px"
+      cardWidth="900px"
+    />
+  )
+
+  const element = screen.getByTestId('card-template')
+  expect(element).toBeDefined()
+})

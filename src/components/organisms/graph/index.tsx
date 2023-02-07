@@ -184,7 +184,7 @@ const GraphComponent = (props: GraphComponentProps) => {
         }
       }
   return (
-    <div>
+    <div data-testid="graph-detail">
       <CardTemplate
         cardHeight="416px"
         cardWidth="100%"

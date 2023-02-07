@@ -129,7 +129,7 @@ const TabsComponent = (props: TabsProps) => {
   )
 
   return (
-    <StyledBox id="tabs">
+    <StyledBox data-testid="tabs" id="tabs">
       <StyledTabs value={value} onChange={handleChange}>
         <Tab label="Overview" {...a11yProps(0)} defaultChecked={true} />
         <Tab label="Wallet" {...a11yProps(1)} />

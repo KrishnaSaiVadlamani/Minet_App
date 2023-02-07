@@ -83,7 +83,7 @@ const CurrencyDetailCardComponent = (props: CurrencyDetailCardProps) => {
   )
 
   const renderTypography = (text: string, value: number) => (
-    <StyledBoxForInfo>
+    <StyledBoxForInfo data-testid="coin-info">
       <TypographyComponent variant="caption1" color="textColor.mediumEmphasis">
         {text}
       </TypographyComponent>
@@ -101,7 +101,7 @@ const CurrencyDetailCardComponent = (props: CurrencyDetailCardProps) => {
     </StyledInnerBox>
   )
   return (
-    <div>
+    <div data-testid="currenctDetailCard">
       <CardTemplate
         borderColor={theme.palette.greyColors.grey100}
         cardWidth="100%"
@@ -113,7 +113,7 @@ const CurrencyDetailCardComponent = (props: CurrencyDetailCardProps) => {
               image={coinIcon}
               imageHeight="56px"
               imageWidth="56px"
-              text={coinName.toUpperCase()}
+              text={coinName && coinName.toUpperCase()}
               textVariant={'h6'}
               textColor={'greyColors.grey500'}
               gapBetweenText="2px"

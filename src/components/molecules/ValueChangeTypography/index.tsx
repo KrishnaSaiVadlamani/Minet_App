@@ -19,6 +19,7 @@ const ValueChangeTypographyComponent = (
       textAlign={'right'}
       display="flex"
       flexDirection= 'column'
+      data-testid="valueChangeTypography"
     >
       <Typography
         variant="body1"

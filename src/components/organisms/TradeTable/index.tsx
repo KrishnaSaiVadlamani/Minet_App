@@ -135,6 +135,7 @@ const TradeTable: React.FC<TradeTableProps> = ({ timePeriod, filterValue, tableT
         <MarketCapRightGrid item>
           <StyledIconButton
             onClick={() => handleMarketCapClick()}
+            data-testid="market-cap-button"
           >
             <StyledIconComponent src={Switch} width={'13px'} height={'10px'} />
           </StyledIconButton>
@@ -158,7 +159,7 @@ const TradeTable: React.FC<TradeTableProps> = ({ timePeriod, filterValue, tableT
 
   return (
     <>
-    <TableContainer>
+    <TableContainer data-testid="trade-table">
         <StyledTable>
           <StyledTableHead>
             <TableRow>

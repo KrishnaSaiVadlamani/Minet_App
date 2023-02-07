@@ -84,7 +84,7 @@ const DeliveryDropdown = (props: DeliveryProps) => {
             }
           >
             <StyledMenuItem value="">
-              <Typography>
+              <Typography data-testid="dropdown">
                 <Grid container>
                   <Grid item>
                     <Grid item xs zeroMinWidth>

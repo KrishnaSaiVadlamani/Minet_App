@@ -20,7 +20,7 @@ const DetailsPage2 = () => {
     },[]       
     )
   return (
-    <HomeTemplate
+    <HomeTemplate 
                   children={<DetailPage />}
                   header={<Header pageName={"Trade"} coinId={coinId} />}
                   footer={<Footer />}

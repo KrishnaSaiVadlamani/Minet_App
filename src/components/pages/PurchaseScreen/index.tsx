@@ -28,7 +28,7 @@ const PurchasePage = () => {
   } = usePurchaseCoin(coinId);
 
   return (
-    <div>
+    <div data-testid="purchase-page">
       <HomeTemplate
         header={<Header pageName={"Checkout"} />}
         sideNav={<SideNavCompnent />}

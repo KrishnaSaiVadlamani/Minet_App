@@ -93,7 +93,7 @@ const CheckoutCard: React.FC<CheckoutCardProps> = ({
   amount = amount ? amount : btcValue * price;
   let total = type === "buy" ? amount + 1000 : amount - 1000;
   return (
-    <StyledBox>
+    <StyledBox data-testid="checkout-card">
       <TypographyGrid container spacing="12px" direction={"column"}>
         <Grid item xs={12}>
           <TypographyComponent

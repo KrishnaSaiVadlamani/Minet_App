@@ -58,7 +58,7 @@ const RightContainer = styled(Grid)({
 
 const Footer = () => {
   return (
-    <StyledBox>
+    <StyledBox data-testid='footer'>
       <MainContainer container>
         <Grid item xs={6}>
           <Stack direction="row" spacing={3}>

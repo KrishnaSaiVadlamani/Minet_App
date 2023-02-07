@@ -1,0 +1,854 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders trade page correctly 1`] = `
+<div
+  className="MuiBox-root css-0"
+  data-testid="home-template"
+>
+  <div
+    className="MuiBox-root css-waw6ev"
+  >
+    <div
+      className="MuiGrid-root css-1gzqqop-MuiGrid-root"
+    >
+      <div
+        className="MuiBox-root css-laq2i1"
+      >
+        <img
+          data-testid="image"
+          height="32px"
+          src={
+            {
+              "process": [Function],
+            }
+          }
+          width="32px"
+        />
+      </div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiBox-root css-laq2i1"
+        >
+          <div>
+            <img
+              alt="icon"
+              className="css-1uu7u3w"
+              data-testid="iconComponent"
+              height="20px"
+              src={
+                {
+                  "process": [Function],
+                }
+              }
+              width="20px"
+            />
+          </div>
+        </div>
+      </a>
+      <div
+        className="MuiBox-root css-laq2i1"
+      >
+        <div>
+          <img
+            alt="icon"
+            className="css-1mj0ve"
+            data-testid="iconComponent"
+            height="20px"
+            src={
+              {
+                "process": [Function],
+              }
+            }
+            width="auto"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-laq2i1"
+      >
+        <div>
+          <img
+            alt="icon"
+            className="css-1mj0ve"
+            data-testid="iconComponent"
+            height="20px"
+            src={
+              {
+                "process": [Function],
+              }
+            }
+            width="auto"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-laq2i1"
+      >
+        <div>
+          <img
+            alt="icon"
+            className="css-1mj0ve"
+            data-testid="iconComponent"
+            height="20px"
+            src={
+              {
+                "process": [Function],
+              }
+            }
+            width="auto"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiBox-root css-laq2i1"
+      >
+        <div>
+          <img
+            alt="icon"
+            className="css-1mj0ve"
+            data-testid="iconComponent"
+            height="20px"
+            src={
+              {
+                "process": [Function],
+              }
+            }
+            width="auto"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-6r5xil-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item css-4rmxrd-MuiGrid-root"
+    >
+      <div
+        className="MuiBox-root css-138dc1c"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-1osj8n2-MuiGrid-root"
+          >
+            <h6
+              className="MuiTypography-root MuiTypography-h6 css-1xhej88-MuiTypography-root"
+              data-testid="Hello"
+            >
+              Trade
+            </h6>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-wrap-xs-nowrap MuiGrid-grid-xs-6 css-19s4pri-MuiGrid-root"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1retnad-MuiButtonBase-root-MuiButton-root"
+                data-testid="button"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiTypography-root MuiTypography-button css-11s3blp-MuiTypography-root"
+                  data-testid="Hello"
+                >
+                  SELL
+                </span>
+              </button>
+            </div>
+            <div
+              className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-nmgn3f-MuiButtonBase-root-MuiButton-root"
+                data-testid="button"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiTypography-root MuiTypography-button css-11s3blp-MuiTypography-root"
+                  data-testid="Hello"
+                >
+                  BUY
+                </span>
+              </button>
+            </div>
+            <hr
+              className="MuiDivider-root MuiDivider-middle MuiDivider-vertical MuiDivider-flexItem css-16bghm4-MuiDivider-root"
+            />
+            <div
+              className="MuiGrid-root MuiGrid-item css-ev762u-MuiGrid-root"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-container css-ljvmaf-MuiGrid-root"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                >
+                  <div>
+                    <div
+                      className="MuiAvatar-root MuiAvatar-circular css-1azxqog-MuiAvatar-root"
+                      data-testid="avatar"
+                    >
+                      <img
+                        alt="Avatar"
+                        className="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                        src={
+                          {
+                            "process": [Function],
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="MuiGrid-root MuiGrid-item css-hhlda7-MuiGrid-root"
+                >
+                  <div>
+                    <img
+                      alt="icon"
+                      className="css-12z3ws7"
+                      data-testid="iconComponent"
+                      height="13px"
+                      src={
+                        {
+                          "process": [Function],
+                        }
+                      }
+                      width="13px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item css-12fsxbk-MuiGrid-root"
+    >
+      <div
+        className="MuiBox-root css-dla7id"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-container css-1xzqqmo-MuiGrid-root"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 css-vok43g-MuiGrid-root"
+          >
+            <div
+              className="MuiTabs-root css-11f25a1-MuiTabs-root"
+            >
+              <div
+                className="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+                onScroll={[Function]}
+                style={
+                  {
+                    "marginBottom": -0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <div
+                  aria-orientation={null}
+                  className="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+                  onKeyDown={[Function]}
+                  role="tablist"
+                >
+                  <button
+                    aria-controls="simple-tabpanel-0"
+                    aria-selected={true}
+                    className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                    defaultChecked={true}
+                    disabled={false}
+                    id="simple-tab-0"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="tab"
+                    tabIndex={0}
+                    type="button"
+                  >
+                    All Assests
+                    <span
+                      className="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+                      style={{}}
+                    />
+                  </button>
+                  <button
+                    aria-controls="simple-tabpanel-1"
+                    aria-selected={false}
+                    className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                    disabled={false}
+                    id="simple-tab-1"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="tab"
+                    tabIndex={-1}
+                    type="button"
+                  >
+                    WatchList
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+          >
+            <div
+              className="MuiBox-root css-j86n2h"
+            >
+              <div
+                className="css-1r6rngd-MuiStack-root"
+              >
+                <div
+                  backgroundColor="#FFFFFF"
+                  className="MuiFormControl-root MuiTextField-root css-5bmsvv-MuiFormControl-root-MuiTextField-root"
+                  filter={false}
+                  handleChange={[Function]}
+                >
+                  <div
+                    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+                      disabled={false}
+                      id=":r0:"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      placeholder="Search all assets"
+                      required={false}
+                      type="text"
+                      value=""
+                    />
+                    <button
+                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-h51xkb-MuiButtonBase-root-MuiIconButton-root"
+                      disabled={false}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onContextMenu={[Function]}
+                      onDragLeave={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={0}
+                      type="button"
+                    >
+                      <div>
+                        <img
+                          alt="icon"
+                          className="css-14oiz6v"
+                          data-testid="iconComponent"
+                          height="20.31px"
+                          src={
+                            {
+                              "process": [Function],
+                            }
+                          }
+                          width="20.31px"
+                        />
+                      </div>
+                    </button>
+                    <fieldset
+                      aria-hidden={true}
+                      className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        className="css-ihdtdm"
+                      >
+                        <span
+                          className="notranslate"
+                        >
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+                <div
+                  className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-l4myf0-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                  onClick={[Function]}
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseDown={[Function]}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    <p
+                      className="MuiTypography-root MuiTypography-body1 css-4umqm8-MuiTypography-root"
+                      data-testid="Hello"
+                    >
+                      1H
+                    </p>
+                  </div>
+                  <input
+                    aria-hidden={true}
+                    className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                    onAnimationStart={[Function]}
+                    onChange={[Function]}
+                    tabIndex={-1}
+                    value="1H"
+                  />
+                  <div
+                    className="MuiBox-root css-17t8bxi"
+                  >
+                    <div>
+                      <img
+                        alt="icon"
+                        className="css-12z3ws7"
+                        data-testid="iconComponent"
+                        height="13px"
+                        src={
+                          {
+                            "process": [Function],
+                          }
+                        }
+                        width="13px"
+                      />
+                    </div>
+                  </div>
+                  <fieldset
+                    aria-hidden={true}
+                    className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      className="css-ihdtdm"
+                    >
+                      <span
+                        className="notranslate"
+                      >
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+                <div
+                  className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-10nkutl-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                  onClick={[Function]}
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseDown={[Function]}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    <p
+                      className="MuiTypography-root MuiTypography-body1 css-4umqm8-MuiTypography-root"
+                      data-testid="Hello"
+                    >
+                      All assets
+                    </p>
+                  </div>
+                  <input
+                    aria-hidden={true}
+                    className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                    onAnimationStart={[Function]}
+                    onChange={[Function]}
+                    tabIndex={-1}
+                    value="All assets"
+                  />
+                  <div
+                    className="MuiBox-root css-17t8bxi"
+                  >
+                    <div>
+                      <img
+                        alt="icon"
+                        className="css-12z3ws7"
+                        data-testid="iconComponent"
+                        height="13px"
+                        src={
+                          {
+                            "process": [Function],
+                          }
+                        }
+                        width="13px"
+                      />
+                    </div>
+                  </div>
+                  <fieldset
+                    aria-hidden={true}
+                    className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      className="css-ihdtdm"
+                    >
+                      <span
+                        className="notranslate"
+                      >
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-labelledby="simple-tab-0"
+          hidden={false}
+          id="simple-tabpanel-0"
+          role="tabpanel"
+        >
+          <div
+            className="MuiBox-root css-0"
+          >
+            <div
+              className="MuiBox-root css-yha5no"
+            >
+              <div
+                className="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+              >
+                <table
+                  className="MuiTable-root css-mpijfr-MuiTable-root"
+                  role={null}
+                >
+                  <thead
+                    className="MuiTableHead-root css-ajzx8i-MuiTableHead-root"
+                    role={null}
+                  >
+                    <tr
+                      className="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+                      role={null}
+                    >
+                      <th
+                        aria-sort={null}
+                        className="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1menud6-MuiTableCell-root"
+                        scope="col"
+                      >
+                        <span
+                          className="MuiTypography-root MuiTypography-caption1 css-ue91cl-MuiTypography-root"
+                          data-testid="Hello"
+                        >
+                          Name
+                        </span>
+                      </th>
+                      <th
+                        aria-sort={null}
+                        className="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1eu9ru6-MuiTableCell-root"
+                        scope="col"
+                      >
+                        <span
+                          className="MuiTypography-root MuiTypography-caption1 css-ue91cl-MuiTypography-root"
+                          data-testid="Hello"
+                        >
+                          Price
+                        </span>
+                      </th>
+                      <th
+                        aria-sort={null}
+                        className="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-179y0b7-MuiTableCell-root"
+                        scope="col"
+                      >
+                        <span
+                          className="MuiTypography-root MuiTypography-caption1 css-ue91cl-MuiTypography-root"
+                          data-testid="Hello"
+                        >
+                          Change
+                        </span>
+                      </th>
+                      <th
+                        aria-sort={null}
+                        className="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-179y0b7-MuiTableCell-root"
+                        scope="col"
+                      >
+                        <div
+                          className="MuiGrid-root MuiGrid-container css-acctgf-MuiGrid-root"
+                        >
+                          <div
+                            className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+                          >
+                            <span
+                              className="MuiTypography-root MuiTypography-caption1 css-ue91cl-MuiTypography-root"
+                              data-testid="Hello"
+                            >
+                              Market Cap
+                            </span>
+                          </div>
+                          <div
+                            className="MuiGrid-root MuiGrid-item css-m1dav7-MuiGrid-root"
+                          >
+                            <button
+                              className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-9hicsv-MuiButtonBase-root-MuiIconButton-root"
+                              disabled={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onContextMenu={[Function]}
+                              onDragLeave={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseUp={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              tabIndex={0}
+                              type="button"
+                            >
+                              <div>
+                                <img
+                                  alt="icon"
+                                  className="css-ru5r2x"
+                                  data-testid="iconComponent"
+                                  height="10px"
+                                  src={
+                                    {
+                                      "process": [Function],
+                                    }
+                                  }
+                                  width="13px"
+                                />
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </th>
+                      <th
+                        aria-sort={null}
+                        className="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1l4na8l-MuiTableCell-root"
+                        scope="col"
+                      >
+                        <span
+                          className="MuiTypography-root MuiTypography-caption1 css-ue91cl-MuiTypography-root"
+                          data-testid="Hello"
+                        >
+                          Watch
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    className="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+                    role={null}
+                  />
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-labelledby="simple-tab-1"
+          hidden={true}
+          id="simple-tabpanel-1"
+          role="tabpanel"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root css-vhpt6z"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container css-1xut4gs-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-1osj8n2-MuiGrid-root"
+      >
+        <div
+          className="css-u10pvi-MuiStack-root"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body2 css-9syhwr-MuiTypography-root"
+            data-testid="Hello"
+          >
+            Dashboard
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body2 css-9syhwr-MuiTypography-root"
+            data-testid="Hello"
+          >
+            Careers
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body2 css-9syhwr-MuiTypography-root"
+            data-testid="Hello"
+          >
+            Legal & Privacy
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body2 css-1iykimn-MuiTypography-root"
+            data-testid="Hello"
+          >
+            © 2021 Minet
+          </p>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-k97rmi-MuiGrid-root"
+      >
+        <div
+          className="css-1lnp4wh-MuiStack-root"
+        >
+          <div
+            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1oufaa8-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+            onClick={[Function]}
+          >
+            <div
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              className="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 css-4umqm8-MuiTypography-root"
+                data-testid="Hello"
+              >
+                English
+              </p>
+            </div>
+            <input
+              aria-hidden={true}
+              className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+              onAnimationStart={[Function]}
+              onChange={[Function]}
+              tabIndex={-1}
+              value="English"
+            />
+            <div
+              className="MuiBox-root css-17t8bxi"
+            >
+              <div>
+                <img
+                  alt="icon"
+                  className="css-12z3ws7"
+                  data-testid="iconComponent"
+                  height="13px"
+                  src={
+                    {
+                      "process": [Function],
+                    }
+                  }
+                  width="13px"
+                />
+              </div>
+            </div>
+            <fieldset
+              aria-hidden={true}
+              className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                className="css-ihdtdm"
+              >
+                <span
+                  className="notranslate"
+                >
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-b63ts3-MuiButtonBase-root-MuiButton-root"
+            data-testid="button"
+            disabled={false}
+            onBlur={[Function]}
+            onContextMenu={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            NEED HELP
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -47,6 +47,7 @@ const DropDownComponent = (props: DropDownComponentProps) => {
   const { menuList, onChange, backgroundColor, width } = props;
   return (
     <StyledDropDown
+      data-testid="dropDown"
       defaultValue={menuList[0]}
       onChange={(e) => props.onChange(e.target.value)}
       sx={{ width: width, backgroundColor: backgroundColor }}
@@ -72,7 +73,7 @@ const DropDownComponent = (props: DropDownComponentProps) => {
         </MenuItem>
       ))}{" "}
     </StyledDropDown>
-  )
+  );
 };
 
 export default DropDownComponent;

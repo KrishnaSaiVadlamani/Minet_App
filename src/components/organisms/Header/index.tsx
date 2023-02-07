@@ -41,8 +41,12 @@ const StyledTypographyComponent = styled(TypographyComponent)({
 const Header = (props: IHeaderProps) => {
   const { pageName } = props;
   const navigate = useNavigate();
+  const handleClick = ()=>{
+    props.coinId&&navigate("/purchase/"+props.coinId);
+  }
+  
   return (
-    <CustomBox>
+    <CustomBox data-testid="Header">
       <Grid container>
         <Grid item xs={6}>
           <StyledTypographyComponent
@@ -79,9 +83,7 @@ const Header = (props: IHeaderProps) => {
               <CustomButton
                 variant="contained"
                 sx={{ backgroundColor: "primary" }}
-                onClick={()=>{
-                  props.coinId&&navigate("/purchase/"+props.coinId);
-                }}
+                onClick={handleClick}
               >
                 <TypographyComponent variant="button">BUY</TypographyComponent>
               </CustomButton>

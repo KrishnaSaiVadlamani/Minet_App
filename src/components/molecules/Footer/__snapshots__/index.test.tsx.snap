@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders footer correctly 1`] = `
+<div
+  className="MuiBox-root css-vhpt6z"
+  data-testid="footer"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container css-1xut4gs-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-1osj8n2-MuiGrid-root"
+    >
+      <div
+        className="css-u10pvi-MuiStack-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body2 css-9syhwr-MuiTypography-root"
+          data-testid="Hello"
+        >
+          Dashboard
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body2 css-9syhwr-MuiTypography-root"
+          data-testid="Hello"
+        >
+          Careers
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body2 css-9syhwr-MuiTypography-root"
+          data-testid="Hello"
+        >
+          Legal & Privacy
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body2 css-1iykimn-MuiTypography-root"
+          data-testid="Hello"
+        >
+          © 2021 Minet
+        </p>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 css-k97rmi-MuiGrid-root"
+    >
+      <div
+        className="css-1lnp4wh-MuiStack-root"
+      >
+        <div
+          className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1oufaa8-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+          data-testid="dropDown"
+          onClick={[Function]}
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            className="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-4umqm8-MuiTypography-root"
+              data-testid="Hello"
+            >
+              English
+            </p>
+          </div>
+          <input
+            aria-hidden={true}
+            className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            onAnimationStart={[Function]}
+            onChange={[Function]}
+            tabIndex={-1}
+            value="English"
+          />
+          <div
+            className="MuiBox-root css-17t8bxi"
+          >
+            <div>
+              <img
+                alt="icon"
+                className="css-12z3ws7"
+                data-testid="iconComponent"
+                height="13px"
+                src={
+                  {
+                    "process": [Function],
+                  }
+                }
+                width="13px"
+              />
+            </div>
+          </div>
+          <fieldset
+            aria-hidden={true}
+            className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="css-ihdtdm"
+            >
+              <span
+                className="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-b63ts3-MuiButtonBase-root-MuiButton-root"
+          data-testid="button"
+          disabled={false}
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          NEED HELP
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -11,7 +11,7 @@ import { priceCorelationMockData } from '../../../utils/constants'
 
 const PriceCorelation = () => {
   return (
-    <div>
+    <div data-testId="price-corelation">
       <CardTemplate
         cardVariant="outlined"
         cardWidth="100%"

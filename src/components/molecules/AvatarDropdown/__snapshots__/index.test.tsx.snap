@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders avatar dropdown correctly 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container css-ljvmaf-MuiGrid-root"
+  data-testid="avatar-dropdown"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+  >
+    <div>
+      <div
+        className="MuiAvatar-root MuiAvatar-circular css-1azxqog-MuiAvatar-root"
+        data-testid="avatar"
+      >
+        <img
+          alt="Avatar"
+          className="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+          src={
+            {
+              "process": [Function],
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item css-hhlda7-MuiGrid-root"
+  >
+    <div>
+      <img
+        alt="icon"
+        className="css-12z3ws7"
+        data-testid="iconComponent"
+        height="13px"
+        src={
+          {
+            "process": [Function],
+          }
+        }
+        width="13px"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -41,10 +41,10 @@ const TransactionSuccess = (props: TransactionSuccessProps) => {
   const { successType, price, symbol } = props
   return (
     <div>
-      <ContainerBox>
+      <ContainerBox data-testid="transaction-success-container">
         <IconComponent src={Success} height="64px" width="64px" />
         <TextContainer>
-          <TypographyComponent variant="heading4">
+          <TypographyComponent variant="heading4" data-testid="total-price">
             {price}
           </TypographyComponent>
           <TypographyComponent
